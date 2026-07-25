@@ -1,0 +1,9 @@
+name = "credit-fixed-crc-proxy"
+main = "crc-proxy-worker.js"
+compatibility_date = "2026-01-01"
+
+# Secrets (apiauthkey / secretkey from your CRC account) are NOT set here.
+# Set them after deploying, via:
+#   wrangler secret put CRC_API_KEY
+#   wrangler secret put CRC_SECRET_KEY
+# This keeps them out of this file and out of the git repo entirely.

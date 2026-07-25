@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /client-login.html
+Disallow: /terms.html
+Disallow: /privacy.html
+
+Sitemap: https://www.credit-fixed.com/sitemap.xml
