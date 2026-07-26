@@ -21,6 +21,7 @@ const pages = [
   ["client-login.html", require("./pages/client-login.js")],
   ["terms.html", require("./pages/terms.js")],
   ["privacy.html", require("./pages/privacy.js")],
+  ["tradeline-list.html", require("./pages/tradeline-list.js")],
 ];
 
 for (const [filename, cfg] of pages) {
@@ -48,6 +49,7 @@ Allow: /
 Disallow: /client-login.html
 Disallow: /terms.html
 Disallow: /privacy.html
+Disallow: /tradeline-list.html
 
 Sitemap: ${SITE}/sitemap.xml
 `;
