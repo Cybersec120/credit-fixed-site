@@ -2,7 +2,7 @@ const { ledgerDivider, calendlyBtn, EMAIL, PHONE, PHONE_TEL } = require("../buil
 
 module.exports = {
   title: "Buy Authorized User Tradelines | Credit-Fixed",
-  description: "Shop seasoned authorized user tradelines with local guidance from Credit-Fixed. See how pricing works by credit limit and account age, and what to expect.",
+  description: "Shop seasoned authorized user tradelines with local guidance from Credit-Fixed. Request access to our current inventory and pricing, all states served.",
   canonicalPath: "/tradelines.html",
   activeHref: "/tradelines.html",
   body: `
@@ -10,30 +10,49 @@ module.exports = {
       <div class="container">
         <span class="eyebrow">Tradelines</span>
         <h1>Seasoned authorized user tradelines, explained plainly.</h1>
-        <p class="lede">Tradelines are priced by two things: the credit limit on the account, and how long it's been open (its "age"). Higher limit and older age generally cost more — here's how ours will be structured. New to the concept? Read <a href="/what-is-a-tradeline.html" style="text-decoration:underline;color:var(--emerald);">What Is a Tradeline?</a> first.</p>
+        <p class="lede">Tradelines are priced by two things: the credit limit on the account, and how long it's been open (its "age"). Higher limit and older age generally cost more. New to the concept? Read <a href="/what-is-a-tradeline.html" style="text-decoration:underline;color:var(--emerald);">What Is a Tradeline?</a> first.</p>
       </div>
     </section>
     ${ledgerDivider()}
 
     <section>
-      <div class="container">
-        <div class="testimonial-note">
-          PRICING TABLE PLACEHOLDER — structure is ready, real tiers need to be filled in.
-          Typical industry structure is priced by <strong>credit limit tier</strong> ×
-          <strong>account age tier</strong> (e.g., a $10k–$20k limit, 5+ year old account
-          costs more than a $2k–$5k limit, 2-year account). Replace the table below with
-          actual pricing once finalized.
+      <div class="container" style="padding: 48px 0;">
+        <div style="max-width: 560px; margin: 0 auto; text-align: center;">
+          <h2>Request Access to Our Exclusive Tradeline List</h2>
+          <p class="small">
+            Pricing varies by tradeline age, credit limit, and reporting bureau.
+            Access to our current inventory and pricing is available exclusively
+            to verified clients — complete the form below to request access.
+          </p>
         </div>
-        <div style="margin-top:24px; overflow-x:auto;">
-          <table class="simple">
-            <tr><th>Credit Limit</th><th>Account Age</th><th>Price</th></tr>
-            <tr><td>[e.g. $2,000–$5,000]</td><td>[e.g. 2–4 years]</td><td>[TBD]</td></tr>
-            <tr><td>[e.g. $5,000–$10,000]</td><td>[e.g. 4–7 years]</td><td>[TBD]</td></tr>
-            <tr><td>[e.g. $10,000–$20,000]</td><td>[e.g. 7–10 years]</td><td>[TBD]</td></tr>
-            <tr><td>[e.g. $20,000+]</td><td>[e.g. 10+ years]</td><td>[TBD]</td></tr>
-          </table>
-        </div>
-        <p class="small" style="margin-top:16px;">All tradelines are subject to availability. Adding a tradeline does not guarantee any specific change to your credit score — results vary by individual credit profile.</p>
+
+        <form class="access-request-form card" style="max-width: 480px; margin: 24px auto 0; display: grid; gap: 16px;">
+          <label>
+            Full Name
+            <input type="text" name="full_name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required>
+          </label>
+          <label>
+            What are you trying to accomplish?
+            <select name="goal" required>
+              <option value="">Select one</option>
+              <option value="raise_score">Raise my personal credit score</option>
+              <option value="business_credit">Build business credit</option>
+              <option value="qualify_funding">Qualify for funding</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-gold">Request Access</button>
+        </form>
+
+        <p class="small" style="margin-top:16px; text-align:center;">All tradelines are subject to availability. Adding a tradeline does not guarantee any specific change to your credit score — results vary by individual credit profile.</p>
       </div>
     </section>
     ${ledgerDivider()}
@@ -44,12 +63,8 @@ module.exports = {
           <span class="eyebrow">Our Guarantee</span>
           <h2>What happens if a tradeline doesn't post</h2>
         </div>
-        <div class="testimonial-note">
-          GUARANTEE POLICY PLACEHOLDER — needs the real non-posting/refund policy.
-          Most tradeline companies guarantee posting within a set window (e.g. before
-          the next statement cycle) or offer a replacement/refund if it doesn't post.
-          Replace this section with the actual policy once confirmed.
-        </div>
+        <p>If your purchased tradeline does not post to at least two (2) of the three (3) major credit bureaus within its stated reporting period, we will replace it with another tradeline of comparable value. <strong>Credit-Fixed does not offer cash refunds under any circumstances</strong> — replacement is the sole remedy for a non-posting tradeline. Each tradeline's individual reporting period and purchase deadline is disclosed at the time of listing and confirmed in your order receipt.</p>
+        <p>Clients remain as an authorized user for one (1) full reporting cycle, after which they are removed from the account.</p>
       </div>
     </section>
     ${ledgerDivider()}
@@ -59,20 +74,11 @@ module.exports = {
         <div class="grid-2">
           <div>
             <h2>What you'll need at checkout</h2>
-            <div class="testimonial-note">
-              REQUIRED DOCUMENTS PLACEHOLDER — confirm the real list. Commonly required:
-              government-issued photo ID, Social Security card, and (if different) the
-              billing party's ID. Confirm accepted payment methods too (many tradeline
-              companies require ACH/electronic check rather than credit card).
-            </div>
+            <p>Purchasing a tradeline requires identity verification. We require a legitimate, government-issued Social Security Number — we do not accept Credit Privacy Numbers (CPNs) or other falsified identification.</p>
           </div>
           <div>
             <h2>Where it reports</h2>
-            <div class="testimonial-note">
-              BUREAU COVERAGE PLACEHOLDER — confirm which of the three bureaus
-              (Experian, Equifax, TransUnion) each tradeline reports to, and note if
-              any states are excluded from purchase.
-            </div>
+            <p>All tradelines report to the three major credit bureaus: Equifax, Experian, and TransUnion. Our tradeline services are available to clients in all states — no state restrictions.</p>
           </div>
         </div>
       </div>
@@ -88,5 +94,51 @@ module.exports = {
         </div>
       </div>
     </section>
+
+    <script>
+      const WORKER_URL = "https://credit-fixed-notify.cybersecglobal.workers.dev";
+
+      function wireFormSubmit(formSelector, formType) {
+        const form = document.querySelector(formSelector);
+        if (!form) return;
+
+        form.addEventListener("submit", async (e) => {
+          e.preventDefault();
+
+          const submitBtn = form.querySelector("button[type=submit]");
+          const originalText = submitBtn ? submitBtn.textContent : "";
+          if (submitBtn) {
+            submitBtn.textContent = "Sending...";
+            submitBtn.disabled = true;
+          }
+
+          const formData = new FormData(form);
+          const payload = { formType };
+          formData.forEach((value, key) => { payload[key] = value; });
+
+          try {
+            const res = await fetch(WORKER_URL, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload),
+            });
+
+            if (res.ok) {
+              form.innerHTML = "<p>Thanks — we've received your request and will follow up shortly.</p>";
+            } else {
+              throw new Error("Submission failed");
+            }
+          } catch (err) {
+            if (submitBtn) {
+              submitBtn.textContent = originalText;
+              submitBtn.disabled = false;
+            }
+            alert("Something went wrong submitting the form. Please try again or call/email us directly.");
+          }
+        });
+      }
+
+      wireFormSubmit(".access-request-form", "request_access");
+    </script>
   `,
 };
