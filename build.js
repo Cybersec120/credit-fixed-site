@@ -101,7 +101,15 @@ function head({ title, description, canonicalPath, noindex, extraSchema }) {
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  ${schemas.map(s => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n  ")}`;
+  ${schemas.map(s => `<script type="application/ld+json">${JSON.stringify(s)}</script>`).join("\n  ")}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KE5QFRNBZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7KE5QFRNBZ');
+  </script>`;
 }
 
 function headerHtml(activeHref) {
