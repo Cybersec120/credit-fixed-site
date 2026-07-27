@@ -96,6 +96,5 @@ module.exports = {
         </div>
       </div>
     </section>
-
   `,
 };
