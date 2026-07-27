@@ -26,7 +26,9 @@ module.exports = {
           </p>
         </div>
 
-        <form class="access-request-form card" style="max-width: 480px; margin: 24px auto 0; display: grid; gap: 16px;">
+        <form action="https://formsubmit.co/${EMAIL}" method="POST" class="access-request-form card" style="max-width: 480px; margin: 24px auto 0; display: grid; gap: 16px;">
+          <input type="hidden" name="_subject" value="New Tradeline List Access Request — Credit-Fixed">
+          <input type="hidden" name="_captcha" value="true">
           <label>
             Full Name
             <input type="text" name="full_name" required>
@@ -95,50 +97,5 @@ module.exports = {
       </div>
     </section>
 
-    <script>
-      const WORKER_URL = "https://credit-fixed-notify.cybersecglobal.workers.dev";
-
-      function wireFormSubmit(formSelector, formType) {
-        const form = document.querySelector(formSelector);
-        if (!form) return;
-
-        form.addEventListener("submit", async (e) => {
-          e.preventDefault();
-
-          const submitBtn = form.querySelector("button[type=submit]");
-          const originalText = submitBtn ? submitBtn.textContent : "";
-          if (submitBtn) {
-            submitBtn.textContent = "Sending...";
-            submitBtn.disabled = true;
-          }
-
-          const formData = new FormData(form);
-          const payload = { formType };
-          formData.forEach((value, key) => { payload[key] = value; });
-
-          try {
-            const res = await fetch(WORKER_URL, {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(payload),
-            });
-
-            if (res.ok) {
-              form.innerHTML = "<p>Thanks — we've received your request and will follow up shortly.</p>";
-            } else {
-              throw new Error("Submission failed");
-            }
-          } catch (err) {
-            if (submitBtn) {
-              submitBtn.textContent = originalText;
-              submitBtn.disabled = false;
-            }
-            alert("Something went wrong submitting the form. Please try again or call/email us directly.");
-          }
-        });
-      }
-
-      wireFormSubmit(".access-request-form", "request_access");
-    </script>
   `,
 };
