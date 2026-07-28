@@ -575,7 +575,7 @@ module.exports = {
             "<td>Reports up to 60 days after add (closes " + t.closeDate + " monthly)</td>" +
             "<td>" + t.availability + "</td>" +
             "<td><strong>" + tlMoney(t.price) + "</strong></td>" +
-            "<td><a href=\"/sign-up.html\" class=\"btn btn-gold\">Request This Line</a></td>" +
+            "<td><a href=\\"/sign-up.html\\" class=\\"btn btn-gold\\">Request This Line</a></td>" +
             "</tr>";
         }).join("");
 
@@ -589,15 +589,15 @@ module.exports = {
           return;
         }
         let html = "";
-        html += "<button class=\"btn\" " + (tlCurrentPage === 1 ? "disabled" : "") + " onclick=\"tlGoToPage(" + (tlCurrentPage - 1) + ")\">Prev</button>";
+        html += "<button class=\\"btn\\" " + (tlCurrentPage === 1 ? "disabled" : "") + " onclick=\\"tlGoToPage(" + (tlCurrentPage - 1) + ")\\">Prev</button>";
         const maxButtons = 7;
         let startPage = Math.max(1, tlCurrentPage - 3);
         let endPage = Math.min(totalPages, startPage + maxButtons - 1);
         startPage = Math.max(1, endPage - maxButtons + 1);
         for (let p = startPage; p <= endPage; p++) {
-          html += "<button class=\"btn" + (p === tlCurrentPage ? " btn-gold" : "") + "\" onclick=\"tlGoToPage(" + p + ")\">" + p + "</button>";
+          html += "<button class=\\"btn" + (p === tlCurrentPage ? " btn-gold" : "") + "\\" onclick=\\"tlGoToPage(" + p + ")\\">" + p + "</button>";
         }
-        html += "<button class=\"btn\" " + (tlCurrentPage === totalPages ? "disabled" : "") + " onclick=\"tlGoToPage(" + (tlCurrentPage + 1) + ")\">Next</button>";
+        html += "<button class=\\"btn\\" " + (tlCurrentPage === totalPages ? "disabled" : "") + " onclick=\\"tlGoToPage(" + (tlCurrentPage + 1) + ")\\">Next</button>";
         container.innerHTML = html;
       }
 
