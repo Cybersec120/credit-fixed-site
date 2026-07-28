@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tradeline Inventory — Credit-Fixed</title>
-  <meta name="description" content="Current tradeline inventory and pricing for Credit-Fixed clients." />
+  <meta name="description" content="Browse, search, and filter Credit-Fixed's current tradeline inventory and pricing." />
   <link rel="canonical" href="https://www.credit-fixed.com/tradeline-list.html" />
   <meta name="robots" content="index, follow" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Credit-Fixed" />
   <meta property="og:title" content="Tradeline Inventory — Credit-Fixed" />
-  <meta property="og:description" content="Current tradeline inventory and pricing for Credit-Fixed clients." />
+  <meta property="og:description" content="Browse, search, and filter Credit-Fixed's current tradeline inventory and pricing." />
   <meta property="og:url" content="https://www.credit-fixed.com/tradeline-list.html" />
   <meta property="og:image" content="https://www.credit-fixed.com/images/og-cover.jpg" />
   <meta property="og:image:width" content="1200" />
@@ -18,7 +18,7 @@
   <meta property="og:image:alt" content="Credit-Fixed — Tradelines & Business Funding" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Tradeline Inventory — Credit-Fixed" />
-  <meta name="twitter:description" content="Current tradeline inventory and pricing for Credit-Fixed clients." />
+  <meta name="twitter:description" content="Browse, search, and filter Credit-Fixed's current tradeline inventory and pricing." />
   <meta name="twitter:image" content="https://www.credit-fixed.com/images/og-cover.jpg" />
   <meta name="twitter:image:alt" content="Credit-Fixed — Tradelines & Business Funding" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,8 +61,36 @@
     <div class="container" style="padding: 48px 0;">
       <h1>Current Tradeline Inventory</h1>
       <p class="small">Availability and pricing are subject to change without
-      notice — each listing has one confirmed slot per unit shown, so act
-      before the "Add by" date.</p>
+      notice. Lines may skip a reporting cycle once entered into the system;
+      purchase at least 7 days before the statement close date shown to
+      avoid a skipped cycle. We guarantee posting to at least one of the
+      three major bureaus. All lines report for up to 60 days (2 statement
+      cycles) once added.</p>
+
+      <div id="tl-controls" style="display:flex; flex-wrap:wrap; gap:12px; margin:24px 0; align-items:end;">
+        <div style="flex:1; min-width:200px;">
+          <label for="tl-search" style="display:block; font-size:13px; margin-bottom:4px;">Search bank or age</label>
+          <input id="tl-search" type="text" placeholder="e.g. Chase, 2023...">
+        </div>
+        <div>
+          <label for="tl-bank-filter" style="display:block; font-size:13px; margin-bottom:4px;">Bank</label>
+          <select id="tl-bank-filter">
+            <option value="">All Banks</option>
+          </select>
+        </div>
+        <div>
+          <label for="tl-sort" style="display:block; font-size:13px; margin-bottom:4px;">Sort by</label>
+          <select id="tl-sort">
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="limit-desc">Credit Limit: High to Low</option>
+            <option value="limit-asc">Credit Limit: Low to High</option>
+            <option value="bank-asc">Bank: A to Z</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="tl-count" class="small"></p>
 
       <div style="overflow-x: auto;">
         <table>
@@ -78,1115 +106,125 @@
               <th></th>
             </tr>
           </thead>
-          <tbody>
-            
-        <tr>
-          <td>US BANK</td>
-          <td>$2,000</td>
-          <td>4 Yrs, 5 Mos</td>
-          <td>16th</td>
-          <td>04th - 9th</td>
-          <td>1 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$9,900</td>
-          <td>Amex reports limit only, not history</td>
-          <td>25th</td>
-          <td>14th - 19th</td>
-          <td>1 in stock</td>
-          <td><strong>$454</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>US BANK</td>
-          <td>$500</td>
-          <td>4 Yrs, 4 Mos</td>
-          <td>16th</td>
-          <td>04th - 9th</td>
-          <td>1 in stock</td>
-          <td><strong>$415</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$3,500</td>
-          <td>5 Yrs, 9 Mos</td>
-          <td>12th</td>
-          <td>01st - 06th</td>
-          <td>1 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$7,600</td>
-          <td>2 Yrs, 3 Mos</td>
-          <td>7th</td>
-          <td>26th - 1st</td>
-          <td>1 in stock</td>
-          <td><strong>$675</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$7,300</td>
-          <td>6 Yrs, 9 Mos</td>
-          <td>4th</td>
-          <td>23rd - 28th</td>
-          <td>1 in stock</td>
-          <td><strong>$857</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CAPITAL ONE</td>
-          <td>$5,000</td>
-          <td>12 Yrs, 8 Mos</td>
-          <td>2nd</td>
-          <td>21st - 26th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,039</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$31,500</td>
-          <td>9 Yrs, 3 Mos</td>
-          <td>21th</td>
-          <td>10th - 15th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,299</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$6,000</td>
-          <td>2 Yrs, 4 Mos</td>
-          <td>3rd</td>
-          <td>22nd - 27th</td>
-          <td>1 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$25,000</td>
-          <td>7 Yrs, 6 Mos</td>
-          <td>10th</td>
-          <td>29th - 4th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,299</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$18,400</td>
-          <td>21 Yrs, 8 Mos</td>
-          <td>4th</td>
-          <td>23rd - 28th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,949</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$5,000</td>
-          <td>12 Yrs, 6 Mos</td>
-          <td>22th</td>
-          <td>11th-16th</td>
-          <td>1 in stock</td>
-          <td><strong>$974</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$10,000</td>
-          <td>20 Yrs, 3 Mos</td>
-          <td>24th</td>
-          <td>13th - 18th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,689</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$50,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>20th</td>
-          <td>08th - 13th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,299</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$6,000</td>
-          <td>5 Yrs, 3 Mos</td>
-          <td>11th</td>
-          <td>30th - 4th</td>
-          <td>1 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CAPITAL ONE</td>
-          <td>$10,000</td>
-          <td>3 Yrs, 8 Mos</td>
-          <td>6th</td>
-          <td>26th - 1st</td>
-          <td>1 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CAPITAL ONE</td>
-          <td>$3,900</td>
-          <td>11 Yrs, 7 Mos</td>
-          <td>28th</td>
-          <td>17th - 22nd</td>
-          <td>1 in stock</td>
-          <td><strong>$935</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$3,000</td>
-          <td>5 Yrs, 6 Mos</td>
-          <td>21th</td>
-          <td>11th - 16th</td>
-          <td>1 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$4,830</td>
-          <td>4 Yrs, 1 Mos</td>
-          <td>26th</td>
-          <td>14th - 19th</td>
-          <td>1 in stock</td>
-          <td><strong>$688</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>PNC</td>
-          <td>$7,500</td>
-          <td>1 Yrs, 2 Mos</td>
-          <td>3rd</td>
-          <td>22nd - 27th</td>
-          <td>1 in stock</td>
-          <td><strong>$441</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BANK OF AMERICA</td>
-          <td>$3,000</td>
-          <td>2 Yrs, 3 Mos</td>
-          <td>1st</td>
-          <td>22nd - 27th</td>
-          <td>1 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$9,200</td>
-          <td>6 Yrs, 9 Mos</td>
-          <td>26th</td>
-          <td>16th - 21st</td>
-          <td>1 in stock</td>
-          <td><strong>$935</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$3,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>3rd</td>
-          <td>21st - 26th</td>
-          <td>1 in stock</td>
-          <td><strong>$337</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$12,400</td>
-          <td>Amex reports limit only, not history</td>
-          <td>29th</td>
-          <td>16th - 21st</td>
-          <td>1 in stock</td>
-          <td><strong>$597</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>PNC</td>
-          <td>$12,000</td>
-          <td>6 Yrs, 6 Mos</td>
-          <td>1st</td>
-          <td>20th - 25th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,039</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$3,000</td>
-          <td>5 Yrs, 7 Mos</td>
-          <td>20th</td>
-          <td>09th - 14th</td>
-          <td>1 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$17,500</td>
-          <td>6 Yrs, 8 Mos</td>
-          <td>20th</td>
-          <td>09th - 14th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,091</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$13,000</td>
-          <td>7 Yrs, 10 Mos</td>
-          <td>25th</td>
-          <td>15th - 20th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,039</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$9,000</td>
-          <td>6 Yrs, 4 Mos</td>
-          <td>4th</td>
-          <td>23rd - 28th</td>
-          <td>1 in stock</td>
-          <td><strong>$909</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CAPITAL ONE</td>
-          <td>$10,000</td>
-          <td>8 Yrs, 5 Mos</td>
-          <td>30th</td>
-          <td>17th - 23rd</td>
-          <td>1 in stock</td>
-          <td><strong>$909</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$52,000</td>
-          <td>25 Yrs, 11 Mos</td>
-          <td>2nd</td>
-          <td>21st - 26th</td>
-          <td>1 in stock</td>
-          <td><strong>$2,859</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$28,200</td>
-          <td>16 Yrs, 0 Mos</td>
-          <td>10th</td>
-          <td>29th - 4th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,897</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>PENFED</td>
-          <td>$50,000</td>
-          <td>10 Yrs, 1 Mos</td>
-          <td>25th</td>
-          <td>15th - 20th</td>
-          <td>1 in stock</td>
-          <td><strong>$2,079</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$3,000</td>
-          <td>4 Yrs, 8 Mos</td>
-          <td>5th</td>
-          <td>25th - 30th</td>
-          <td>1 in stock</td>
-          <td><strong>$688</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$8,000</td>
-          <td>20 Yrs, 9 Mos</td>
-          <td>7th</td>
-          <td>30th - 4th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,689</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$17,000</td>
-          <td>14 Yrs, 3 Mos</td>
-          <td>4th</td>
-          <td>23rd - 28th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,312</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CAPITAL ONE</td>
-          <td>$5,700</td>
-          <td>26 Yrs, 1 Mos</td>
-          <td>30th</td>
-          <td>16th - 21st</td>
-          <td>1 in stock</td>
-          <td><strong>$1,949</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CAPITAL ONE</td>
-          <td>$1,500</td>
-          <td>0 Yrs, 6 Mos</td>
-          <td>7th</td>
-          <td>26th - 1st</td>
-          <td>1 in stock</td>
-          <td><strong>$402</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$11,500</td>
-          <td>3 Yrs, 4 Mos</td>
-          <td>29th</td>
-          <td>18th - 23rd</td>
-          <td>1 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$17,000</td>
-          <td>4 Yrs, 4 Mos</td>
-          <td>18th</td>
-          <td>10th - 15th</td>
-          <td>1 in stock</td>
-          <td><strong>$818</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$10,000</td>
-          <td>10 Yrs, 5 Mos</td>
-          <td>13th</td>
-          <td>02nd - 7th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,039</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>US BANK</td>
-          <td>$500</td>
-          <td>2 Yrs, 0 Mos</td>
-          <td>18th</td>
-          <td>07th - 12th</td>
-          <td>1 in stock</td>
-          <td><strong>$389</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$19,000</td>
-          <td>7 Yrs, 7 Mos</td>
-          <td>13th</td>
-          <td>02nd - 7th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,091</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$13,000</td>
-          <td>7 Yrs, 9 Mos</td>
-          <td>2nd</td>
-          <td>22nd - 27th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,039</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$20,100</td>
-          <td>Amex reports limit only, not history</td>
-          <td>30th</td>
-          <td>18th - 23rd</td>
-          <td>1 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$20,000</td>
-          <td>9 Yrs, 4 Mos</td>
-          <td>30th</td>
-          <td>18th - 23rd</td>
-          <td>1 in stock</td>
-          <td><strong>$1,208</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$16,500</td>
-          <td>11 Yrs, 9 Mos</td>
-          <td>7th</td>
-          <td>26th - 1st</td>
-          <td>1 in stock</td>
-          <td><strong>$1,299</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>PENFED</td>
-          <td>$3,500</td>
-          <td>3 Yrs, 2 Mos</td>
-          <td>2nd</td>
-          <td>21st - 26th</td>
-          <td>1 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CAPITAL ONE</td>
-          <td>$32,000</td>
-          <td>3 Yrs, 0 Mos</td>
-          <td>30th</td>
-          <td>19th - 24th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,039</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$21,100</td>
-          <td>9 Yrs, 0 Mos</td>
-          <td>3rd</td>
-          <td>20th - 25th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,169</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CAPITAL ONE</td>
-          <td>$5,000</td>
-          <td>3 Yrs, 7 Mos</td>
-          <td>4th</td>
-          <td>23rd - 28th</td>
-          <td>1 in stock</td>
-          <td><strong>$675</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>ELAN</td>
-          <td>$25,000</td>
-          <td>1 Yrs, 0 Mos</td>
-          <td>2nd</td>
-          <td>21st - 26th</td>
-          <td>1 in stock</td>
-          <td><strong>$818</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>ELAN</td>
-          <td>$20,000</td>
-          <td>0 Yrs, 0 Mos</td>
-          <td>2nd</td>
-          <td>21st - 26th</td>
-          <td>1 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>US BANK</td>
-          <td>$1,000</td>
-          <td>2 Yrs, 0 Mos</td>
-          <td>29th</td>
-          <td>18th - 23rd</td>
-          <td>1 in stock</td>
-          <td><strong>$415</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$7,800</td>
-          <td>3 Yrs, 4 Mos</td>
-          <td>8th</td>
-          <td>30th - 5th</td>
-          <td>1 in stock</td>
-          <td><strong>$675</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$3,500</td>
-          <td>3 Yrs, 6 Mos</td>
-          <td>25th</td>
-          <td>14th - 19th</td>
-          <td>1 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$19,300</td>
-          <td>0 Yrs, 4 Mos</td>
-          <td>30th</td>
-          <td>18th - 23rd</td>
-          <td>1 in stock</td>
-          <td><strong>$688</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$15,000</td>
-          <td>2 Yrs, 0 Mos</td>
-          <td>1st</td>
-          <td>20th - 25th</td>
-          <td>1 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$46,100</td>
-          <td>8 Yrs, 7 Mos</td>
-          <td>7th</td>
-          <td>26th - 1st</td>
-          <td>1 in stock</td>
-          <td><strong>$1,897</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$35,000</td>
-          <td>10 Yrs, 0 Mos</td>
-          <td>5th</td>
-          <td>25th - 30th</td>
-          <td>1 in stock</td>
-          <td><strong>$1,507</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$2,000</td>
-          <td>4 Yrs, 5 Mos</td>
-          <td>01th</td>
-          <td>21st - 26th</td>
-          <td>2 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$31,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>19th</td>
-          <td>08th -13th</td>
-          <td>2 in stock</td>
-          <td><strong>$909</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$22,500</td>
-          <td>2 Yrs, 8 Mos</td>
-          <td>25th</td>
-          <td>14th - 19th</td>
-          <td>2 in stock</td>
-          <td><strong>$818</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$25,000</td>
-          <td>2 Yrs, 9 Mos</td>
-          <td>9th</td>
-          <td>29th - 4th</td>
-          <td>2 in stock</td>
-          <td><strong>$844</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>ELAN</td>
-          <td>$25,000</td>
-          <td>5 Yrs, 4 Mos</td>
-          <td>13th</td>
-          <td>04th - 9th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,208</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>ELAN</td>
-          <td>$12,500</td>
-          <td>5 Yrs, 5 Mos</td>
-          <td>5th</td>
-          <td>04th - 9th</td>
-          <td>2 in stock</td>
-          <td><strong>$818</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$30,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>7th</td>
-          <td>26th - 1st</td>
-          <td>2 in stock</td>
-          <td><strong>$883</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>DISCOVER</td>
-          <td>$5,600</td>
-          <td>21 Yrs, 3 Mos</td>
-          <td>20th</td>
-          <td>10th - 15th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,364</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>ELAN</td>
-          <td>$14,000</td>
-          <td>14 Yrs, 7 Mos</td>
-          <td>10th</td>
-          <td>04th - 9th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,299</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$9,500</td>
-          <td>Amex reports limit only, not history</td>
-          <td>14th</td>
-          <td>06th - 11th</td>
-          <td>2 in stock</td>
-          <td><strong>$454</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$12,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>27th</td>
-          <td>16th - 21st</td>
-          <td>2 in stock</td>
-          <td><strong>$584</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$21,000</td>
-          <td>23 Yrs, 11 Mos</td>
-          <td>5th</td>
-          <td>23rd - 28th</td>
-          <td>2 in stock</td>
-          <td><strong>$2,079</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>ELAN</td>
-          <td>$12,400</td>
-          <td>7 Yrs, 9 Mos</td>
-          <td>10th</td>
-          <td>04th - 9th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,026</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$2,000</td>
-          <td>1 Yrs, 0 Mos</td>
-          <td>25th</td>
-          <td>14th - 19th</td>
-          <td>2 in stock</td>
-          <td><strong>$415</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$15,000</td>
-          <td>31 Yrs, 7 Mos</td>
-          <td>20th</td>
-          <td>10th - 15th</td>
-          <td>2 in stock</td>
-          <td><strong>$2,365</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$11,000</td>
-          <td>1 Yrs, 1 Mos</td>
-          <td>24th</td>
-          <td>14th - 19th</td>
-          <td>2 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>ELAN</td>
-          <td>$14,000</td>
-          <td>11 Yrs, 6 Mos</td>
-          <td>8th</td>
-          <td>04th - 9th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,208</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$32,700</td>
-          <td>16 Yrs, 5 Mos</td>
-          <td>11th</td>
-          <td>01st - 6th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,949</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$22,300</td>
-          <td>8 Yrs, 8 Mos</td>
-          <td>11th</td>
-          <td>01st - 6th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,169</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$52,000</td>
-          <td>32 Yrs, 11 Mos</td>
-          <td>8th</td>
-          <td>26th - 1st</td>
-          <td>2 in stock</td>
-          <td><strong>$2,989</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$9,000</td>
-          <td>0 Yrs, 1 Mos</td>
-          <td>3rd</td>
-          <td>24th - 29th</td>
-          <td>2 in stock</td>
-          <td><strong>$584</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$35,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>1st</td>
-          <td>17th - 22nd</td>
-          <td>2 in stock</td>
-          <td><strong>$1,039</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$16,700</td>
-          <td>9 Yrs, 1 Mos</td>
-          <td>25th</td>
-          <td>15th - 20th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,039</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$13,000</td>
-          <td>2 Yrs, 3 Mos</td>
-          <td>9th</td>
-          <td>28th - 3rd</td>
-          <td>2 in stock</td>
-          <td><strong>$714</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$12,800</td>
-          <td>11 Yrs, 4 Mos</td>
-          <td>26th</td>
-          <td>16th - 21st</td>
-          <td>2 in stock</td>
-          <td><strong>$1,169</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$4,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>8th</td>
-          <td>27th - 2nd</td>
-          <td>2 in stock</td>
-          <td><strong>$350</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$11,000</td>
-          <td>17 Yrs, 5 Mos</td>
-          <td>12th</td>
-          <td>30th - 4th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,455</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$6,000</td>
-          <td>3 Yrs, 1 Mos</td>
-          <td>9th</td>
-          <td>29th - 4th</td>
-          <td>2 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>BARCLAYS</td>
-          <td>$15,050</td>
-          <td>7 Yrs, 2 Mos</td>
-          <td>8th</td>
-          <td>28th - 3rd</td>
-          <td>2 in stock</td>
-          <td><strong>$1,078</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CHASE</td>
-          <td>$29,500</td>
-          <td>0 Yrs, 10 Mos</td>
-          <td>10th</td>
-          <td>29th - 4th</td>
-          <td>2 in stock</td>
-          <td><strong>$935</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>CITIBANK</td>
-          <td>$9,400</td>
-          <td>11 Yrs, 1 Mos</td>
-          <td>14th</td>
-          <td>02nd - 7th</td>
-          <td>2 in stock</td>
-          <td><strong>$1,039</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$15,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>10th</td>
-          <td>30th - 5th</td>
-          <td>3 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$30,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>8th</td>
-          <td>27th - 2nd</td>
-          <td>3 in stock</td>
-          <td><strong>$883</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$41,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>23th</td>
-          <td>12th - 17th</td>
-          <td>3 in stock</td>
-          <td><strong>$1,091</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$30,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>2nd</td>
-          <td>21st - 26th</td>
-          <td>3 in stock</td>
-          <td><strong>$883</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$12,900</td>
-          <td>Amex reports limit only, not history</td>
-          <td>27th</td>
-          <td>17th - 22nd</td>
-          <td>3 in stock</td>
-          <td><strong>$597</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$15,000</td>
-          <td>Amex reports limit only, not history</td>
-          <td>28th</td>
-          <td>17th - 22nd</td>
-          <td>3 in stock</td>
-          <td><strong>$649</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$10,500</td>
-          <td>Amex reports limit only, not history</td>
-          <td>3rd</td>
-          <td>21st - 26th</td>
-          <td>3 in stock</td>
-          <td><strong>$584</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$5,200</td>
-          <td>Amex reports limit only, not history</td>
-          <td>15th</td>
-          <td>03rd - 8th</td>
-          <td>3 in stock</td>
-          <td><strong>$389</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-
-        <tr>
-          <td>AMERICAN EXPRESS</td>
-          <td>$10,800</td>
-          <td>Amex reports limit only, not history</td>
-          <td>1st</td>
-          <td>21st - 26th</td>
-          <td>3 in stock</td>
-          <td><strong>$584</strong></td>
-          <td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>
-        </tr>
-          </tbody>
+          <tbody id="tl-body"></tbody>
         </table>
       </div>
+
+      <div id="tl-pagination" style="display:flex; justify-content:center; gap:8px; margin-top:24px; flex-wrap:wrap;"></div>
 
       <p style="margin-top: 32px;">Questions before you choose? Book a
       free consultation and we'll help you pick the right tradeline for
       your goals. <a href="https://calendly.com/credit-fixed" class="btn btn-gold" onclick="if(window.Calendly){Calendly.initPopupWidget({url:'https://calendly.com/credit-fixed'});return false;}" target="_blank" rel="noopener">Book a Free Consultation</a></p>
     </div>
+
+    <script>
+      // NOTE: this array contains ONLY final client-facing prices —
+      // the wholesale cost was already stripped out at build time.
+      const tlInventory = [{"bank":"WELLS FARGO","limit":21000,"age":"2022","closeDate":"2ND","availability":"15","price":350},{"bank":"AMERICAN EXPRESS","limit":25000,"age":"Amex reports limit only, not history","closeDate":"2ND","availability":"Many","price":310},{"bank":"AMERICAN EXPRESS","limit":22000,"age":"Amex reports limit only, not history","closeDate":"2ND","availability":"Many","price":300},{"bank":"CITIBANK","limit":19500,"age":"2023","closeDate":"2ND","availability":"2","price":315},{"bank":"AMERICAN EXPRESS","limit":35000,"age":"Amex reports limit only, not history","closeDate":"2ND","availability":"Many","price":335},{"bank":"BANK OF AMERICA","limit":14800,"age":"2025","closeDate":"2ND","availability":"2","price":315},{"bank":"CAPITAL ONE","limit":7000,"age":"2022","closeDate":"2ND","availability":"4","price":270},{"bank":"CHASE","limit":7300,"age":"2018","closeDate":"2ND","availability":"11","price":300},{"bank":"CITIBANK","limit":3000,"age":"2023","closeDate":"2ND","availability":"8","price":245},{"bank":"AMERICAN EXPRESS","limit":30000,"age":"Amex reports limit only, not history","closeDate":"3RD","availability":"Many","price":330},{"bank":"CITIBANK","limit":4500,"age":"2022","closeDate":"3RD","availability":"8","price":245},{"bank":"AMERICAN EXPRESS","limit":21800,"age":"Amex reports limit only, not history","closeDate":"3RD","availability":"Many","price":300},{"bank":"WELLS FARGO","limit":7000,"age":"2024","closeDate":"3RD","availability":"15","price":240},{"bank":"AMERICAN EXPRESS","limit":6500,"age":"Amex reports limit only, not history","closeDate":"3RD","availability":"Many","price":230},{"bank":"CITIBANK","limit":3000,"age":"2025","closeDate":"3RD","availability":"6","price":240},{"bank":"CITIBANK","limit":3000,"age":"2023","closeDate":"3RD","availability":"5","price":245},{"bank":"CITIBANK","limit":15500,"age":"2019","closeDate":"3RD","availability":"1","price":350},{"bank":"WELLS FARGO","limit":11000,"age":"2022","closeDate":"3RD","availability":"15","price":280},{"bank":"CHASE","limit":7000,"age":"2007","closeDate":"3RD","availability":"1","price":400},{"bank":"CHASE","limit":2500,"age":"2024","closeDate":"3RD","availability":"1","price":245},{"bank":"WELLS FARGO","limit":9700,"age":"2017","closeDate":"3RD","availability":"15","price":340},{"bank":"BARCLAYS","limit":20000,"age":"2018","closeDate":"3RD","availability":"3","price":355},{"bank":"BARCLAYS","limit":5500,"age":"2021","closeDate":"3RD","availability":"15","price":260},{"bank":"CAPITAL ONE","limit":500,"age":"2019","closeDate":"3RD","availability":"2","price":200},{"bank":"CAPITAL ONE","limit":5000,"age":"2018","closeDate":"3RD","availability":"2","price":285},{"bank":"US BANK","limit":7000,"age":"2024","closeDate":"3RD","availability":"1","price":260},{"bank":"CHASE","limit":8500,"age":"2016","closeDate":"3RD","availability":"1","price":325},{"bank":"CITIBANK","limit":11100,"age":"2025","closeDate":"3RD","availability":"2","price":260},{"bank":"CITIBANK","limit":10000,"age":"2016","closeDate":"3RD","availability":"1","price":360},{"bank":"CAPITAL ONE","limit":3500,"age":"2018","closeDate":"3RD","availability":"10","price":285},{"bank":"AMERICAN EXPRESS","limit":15000,"age":"Amex reports limit only, not history","closeDate":"3RD","availability":"Many","price":260},{"bank":"AMERICAN EXPRESS","limit":3000,"age":"Amex reports limit only, not history","closeDate":"3RD","availability":"Many","price":210},{"bank":"CHASE","limit":14200,"age":"2025","closeDate":"3RD","availability":"3","price":295},{"bank":"CHASE","limit":13200,"age":"2025","closeDate":"3RD","availability":"3","price":285},{"bank":"BARCLAYS","limit":50000,"age":"2024","closeDate":"3RD","availability":"5","price":385},{"bank":"CITIBANK","limit":1500,"age":"2025","closeDate":"3RD","availability":"3","price":215},{"bank":"CITIBANK","limit":17600,"age":"2022","closeDate":"3RD","availability":"10","price":310},{"bank":"CITIBANK","limit":11800,"age":"2025","closeDate":"3RD","availability":"7","price":270},{"bank":"CITIBANK","limit":17000,"age":"2025","closeDate":"3RD","availability":"2","price":295},{"bank":"CITIBANK","limit":7000,"age":"2025","closeDate":"4TH","availability":"2","price":250},{"bank":"BARCLAYS","limit":2000,"age":"2025","closeDate":"4TH","availability":"15","price":200},{"bank":"CITIBANK","limit":3000,"age":"2025","closeDate":"4TH","availability":"10","price":200},{"bank":"CITIBANK","limit":11600,"age":"2025","closeDate":"5TH","availability":"7","price":255},{"bank":"CITIBANK","limit":4000,"age":"2025","closeDate":"5TH","availability":"3","price":200},{"bank":"CHASE","limit":14000,"age":"2022","closeDate":"5TH","availability":"5","price":315},{"bank":"BARCLAYS","limit":4800,"age":"2025","closeDate":"5TH","availability":"2","price":250},{"bank":"CITIZENS","limit":11000,"age":"90 day term 2016","closeDate":"5TH","availability":"1","price":450},{"bank":"BARCLAYS","limit":6200,"age":"2022","closeDate":"5TH","availability":"5","price":270},{"bank":"WELLS FARGO","limit":7000,"age":"2025","closeDate":"5TH","availability":"13","price":235},{"bank":"CAPITAL ONE","limit":20000,"age":"2024","closeDate":"5TH","availability":"5","price":350},{"bank":"CITIBANK","limit":3000,"age":"2020","closeDate":"6TH","availability":"5","price":240},{"bank":"WELLS FARGO","limit":7500,"age":"2022","closeDate":"6TH","availability":"15","price":260},{"bank":"WELLS FARGO","limit":4400,"age":"2019","closeDate":"6TH","availability":"15","price":250},{"bank":"ROBINHOOD","limit":5000,"age":"2024","closeDate":"6TH","availability":"4","price":240},{"bank":"AMERICAN EXPRESS","limit":9500,"age":"Amex reports limit only, not history","closeDate":"6TH","availability":"Many","price":255},{"bank":"CHASE","limit":7500,"age":"2023","closeDate":"6TH","availability":"1","price":260},{"bank":"CITIBANK","limit":8800,"age":"2025","closeDate":"6TH","availability":"7","price":250},{"bank":"AMERICAN EXPRESS","limit":22000,"age":"Amex reports limit only, not history","closeDate":"6TH","availability":"Many","price":300},{"bank":"WELLS FARGO","limit":2000,"age":"2022","closeDate":"6TH","availability":"15","price":210},{"bank":"CITIBANK","limit":21700,"age":"2019","closeDate":"6TH","availability":"1","price":375},{"bank":"WELLS FARGO","limit":20000,"age":"2019","closeDate":"6TH","availability":"15","price":380},{"bank":"CAPITAL ONE","limit":5500,"age":"2019","closeDate":"6TH","availability":"1","price":260},{"bank":"CITIBANK","limit":6600,"age":"2022","closeDate":"6TH","availability":"2","price":265},{"bank":"CITIBANK","limit":8800,"age":"2025","closeDate":"6TH","availability":"9","price":255},{"bank":"AMERICAN EXPRESS","limit":35000,"age":"Amex reports limit only, not history","closeDate":"6TH","availability":"Many","price":330},{"bank":"TD BANK","limit":8000,"age":"2025","closeDate":"6TH","availability":"3","price":250},{"bank":"BARCLAYS","limit":15000,"age":"2024","closeDate":"6TH","availability":"4","price":315},{"bank":"AMERICAN EXPRESS","limit":20000,"age":"Amex reports limit only, not history","closeDate":"7TH","availability":"Many","price":295},{"bank":"WELLS FARGO","limit":10000,"age":"2021","closeDate":"7TH","availability":"15","price":290},{"bank":"CITIBANK","limit":8800,"age":"2025","closeDate":"7TH","availability":"2","price":255},{"bank":"CITIBANK","limit":15000,"age":"2024","closeDate":"7TH","availability":"1","price":300},{"bank":"CITIBANK","limit":7000,"age":"2024","closeDate":"7TH","availability":"5","price":260},{"bank":"CAPITAL ONE","limit":2000,"age":"2023","closeDate":"7TH","availability":"1","price":215},{"bank":"NFCU","limit":25000,"age":"2018","closeDate":"7TH","availability":"1","price":385},{"bank":"BARCLAYS","limit":11200,"age":"2024","closeDate":"7TH","availability":"7","price":265},{"bank":"CITIBANK","limit":6500,"age":"2022","closeDate":"7TH","availability":"3","price":250},{"bank":"GOLDMAN SACHS","limit":12000,"age":"2024","closeDate":"7TH","availability":"2","price":275},{"bank":"CITIBANK","limit":14000,"age":"2024","closeDate":"7TH","availability":"4","price":285},{"bank":"CITIBANK","limit":1000,"age":"2019","closeDate":"7TH","availability":"5","price":250},{"bank":"CITIBANK","limit":8800,"age":"2025","closeDate":"7TH","availability":"5","price":265},{"bank":"CAPITAL ONE","limit":4000,"age":"2025","closeDate":"7TH","availability":"10","price":250},{"bank":"TD BANK","limit":6000,"age":"2021","closeDate":"7TH","availability":"4","price":255},{"bank":"DISCOVER","limit":5000,"age":"2025","closeDate":"7TH","availability":"2","price":255},{"bank":"CITIBANK","limit":8700,"age":"2022","closeDate":"7TH","availability":"5","price":250},{"bank":"WELLS FARGO","limit":3000,"age":"2023","closeDate":"7TH","availability":"15","price":210},{"bank":"DISCOVER","limit":7000,"age":"2015","closeDate":"7TH","availability":"3","price":395},{"bank":"CITIBANK","limit":10000,"age":"2024","closeDate":"7TH","availability":"2","price":285},{"bank":"CHASE","limit":15000,"age":"2020","closeDate":"7TH","availability":"5","price":325},{"bank":"WELLS FARGO","limit":1000,"age":"2022","closeDate":"8TH","availability":"13","price":215},{"bank":"CAPITAL ONE","limit":3000,"age":"2021","closeDate":"8TH","availability":"5","price":250},{"bank":"DISCOVER","limit":10000,"age":"2025","closeDate":"8TH","availability":"1","price":285},{"bank":"CAPITAL ONE","limit":4400,"age":"2024","closeDate":"8TH","availability":"2","price":240},{"bank":"CAPITAL ONE","limit":500,"age":"2025","closeDate":"8TH","availability":"1","price":190},{"bank":"BARCLAYS","limit":9000,"age":"2023","closeDate":"8TH","availability":"8","price":280},{"bank":"ELAN","limit":23000,"age":"2021","closeDate":"9TH","availability":"4","price":385},{"bank":"CHASE","limit":22000,"age":"2024","closeDate":"9TH","availability":"9","price":350},{"bank":"CITIBANK","limit":9900,"age":"2023","closeDate":"9TH","availability":"1","price":265},{"bank":"CITIBANK","limit":2200,"age":"2015","closeDate":"9TH","availability":"2","price":315},{"bank":"CITIBANK","limit":5000,"age":"2022","closeDate":"9TH","availability":"3","price":250},{"bank":"CITIBANK","limit":4000,"age":"2025","closeDate":"9TH","availability":"5","price":230},{"bank":"CITIBANK","limit":9200,"age":"2025","closeDate":"9TH","availability":"6","price":250},{"bank":"CHASE","limit":12600,"age":"2025","closeDate":"9TH","availability":"1","price":275},{"bank":"AMERICAN EXPRESS","limit":23000,"age":"Amex reports limit only, not history","closeDate":"9TH","availability":"Many","price":300},{"bank":"WELLS FARGO","limit":4200,"age":"2023","closeDate":"9TH","availability":"4","price":245},{"bank":"CAPITAL ONE","limit":3000,"age":"2024","closeDate":"9TH","availability":"6","price":245},{"bank":"CAPITAL ONE","limit":15000,"age":"2025","closeDate":"9TH","availability":"3","price":295},{"bank":"CITIBANK","limit":2300,"age":"2022","closeDate":"9TH","availability":"1","price":245},{"bank":"BARCLAYS","limit":12000,"age":"2024","closeDate":"10TH","availability":"5","price":280},{"bank":"CITIBANK","limit":7200,"age":"2025","closeDate":"10TH","availability":"9","price":250},{"bank":"AMERICAN EXPRESS","limit":9200,"age":"Amex reports limit only, not history","closeDate":"10TH","availability":"Many","price":250},{"bank":"WELLS FARGO","limit":9000,"age":"2020","closeDate":"10TH","availability":"15","price":285},{"bank":"CITIBANK","limit":6200,"age":"2021","closeDate":"10TH","availability":"3","price":280},{"bank":"CITIBANK","limit":2200,"age":"2018","closeDate":"10TH","availability":"2","price":250},{"bank":"WELLS FARGO","limit":15700,"age":"2023","closeDate":"10TH","availability":"14","price":295},{"bank":"CITIBANK","limit":1500,"age":"2026","closeDate":"10TH","availability":"4","price":210},{"bank":"CITIBANK","limit":8000,"age":"2023","closeDate":"10TH","availability":"8","price":265},{"bank":"CHASE","limit":17000,"age":"2024","closeDate":"10TH","availability":"2","price":300},{"bank":"BARCLAYS","limit":9000,"age":"2022","closeDate":"10TH","availability":"2","price":285},{"bank":"CITIBANK","limit":10000,"age":"2022","closeDate":"10TH","availability":"5","price":295},{"bank":"AMERICAN EXPRESS","limit":5000,"age":"Amex reports limit only, not history","closeDate":"10TH","availability":"Many","price":220},{"bank":"WELLS FARGO","limit":4200,"age":"2023","closeDate":"10TH","availability":"15","price":230},{"bank":"AMERICAN EXPRESS","limit":95500,"age":"Amex reports limit only, not history","closeDate":"10TH","availability":"Many","price":425},{"bank":"WELLS FARGO","limit":72000,"age":"2022","closeDate":"10TH","availability":"15","price":400},{"bank":"CAPITAL ONE","limit":3000,"age":"2021","closeDate":"10TH","availability":"4","price":255},{"bank":"CAPITAL ONE","limit":3000,"age":"2025","closeDate":"10TH","availability":"5","price":210},{"bank":"AMERICAN EXPRESS","limit":33000,"age":"Amex reports limit only, not history","closeDate":"10TH","availability":"Many","price":325},{"bank":"CITIBANK","limit":2000,"age":"2026","closeDate":"10TH","availability":"4","price":220},{"bank":"NFCU","limit":11700,"age":"2026","closeDate":"10TH","availability":"2","price":285},{"bank":"AMERICAN EXPRESS","limit":2100,"age":"Amex reports limit only, not history","closeDate":"10TH","availability":"Many","price":210},{"bank":"CAPITAL ONE","limit":23000,"age":"2024","closeDate":"10TH","availability":"9","price":350},{"bank":"CITIBANK","limit":50000,"age":"2015","closeDate":"10TH","availability":"4","price":425},{"bank":"CAPITAL ONE","limit":3000,"age":"2024","closeDate":"10TH","availability":"5","price":235},{"bank":"AMERICAN EXPRESS","limit":15000,"age":"Amex reports limit only, not history","closeDate":"10TH","availability":"Many","price":270},{"bank":"CITIBANK","limit":6800,"age":"2023","closeDate":"12TH","availability":"5","price":265},{"bank":"WELLS FARGO","limit":6000,"age":"2024","closeDate":"12TH","availability":"10","price":250},{"bank":"DISCOVER","limit":9500,"age":"2024","closeDate":"12TH","availability":"1","price":270},{"bank":"CITIBANK","limit":2000,"age":"2025","closeDate":"12TH","availability":"5","price":200},{"bank":"WELLS FARGO","limit":7200,"age":"2013","closeDate":"12TH","availability":"10","price":365},{"bank":"AMERICAN EXPRESS","limit":18900,"age":"Amex reports limit only, not history","closeDate":"12TH","availability":"Many","price":280},{"bank":"CITIBANK","limit":9000,"age":"2019","closeDate":"13TH","availability":"5","price":300},{"bank":"CAPITAL ONE","limit":3000,"age":"2021","closeDate":"13TH","availability":"1","price":220},{"bank":"CITIBANK","limit":2300,"age":"2001","closeDate":"13TH","availability":"1","price":400},{"bank":"CAPITAL ONE","limit":3000,"age":"2024","closeDate":"13TH","availability":"5","price":215},{"bank":"CITIBANK","limit":560,"age":"2021","closeDate":"13TH","availability":"5","price":200},{"bank":"ALLIANT","limit":15000,"age":"2019","closeDate":"13TH","availability":"3","price":350},{"bank":"WELLS FARGO","limit":6000,"age":"2024","closeDate":"13TH","availability":"15","price":245},{"bank":"CITIBANK","limit":4000,"age":"2021","closeDate":"13TH","availability":"1","price":245},{"bank":"BARCLAYS","limit":2000,"age":"2023","closeDate":"13TH","availability":"4","price":225},{"bank":"CITIBANK","limit":17500,"age":"2025","closeDate":"13TH","availability":"5","price":295},{"bank":"CITIBANK","limit":3500,"age":"2020","closeDate":"13TH","availability":"4","price":245},{"bank":"CITIBANK","limit":20000,"age":"2021","closeDate":"13TH","availability":"7","price":360},{"bank":"CITIBANK","limit":15000,"age":"2016","closeDate":"13TH","availability":"1","price":365},{"bank":"AMERICAN EXPRESS","limit":10000,"age":"Amex reports limit only, not history","closeDate":"13TH","availability":"Many","price":255},{"bank":"CAPITAL ONE","limit":500,"age":"2025","closeDate":"13TH","availability":"3","price":190},{"bank":"CAPITAL ONE","limit":6200,"age":"2021","closeDate":"13TH","availability":"15","price":265},{"bank":"CHASE","limit":20000,"age":"2025","closeDate":"13TH","availability":"4","price":355},{"bank":"AMERICAN EXPRESS","limit":11500,"age":"Amex reports limit only, not history","closeDate":"13TH","availability":"Many","price":260},{"bank":"WELLS FARGO","limit":11000,"age":"2025","closeDate":"13TH","availability":"4","price":240},{"bank":"BARCLAYS","limit":22000,"age":"2024","closeDate":"13TH","availability":"8","price":320},{"bank":"BARCLAYS","limit":20000,"age":"2024","closeDate":"13TH","availability":"10","price":315},{"bank":"DISCOVER","limit":4000,"age":"6 MO TERM 2025","closeDate":"13TH","availability":"1","price":350},{"bank":"CHASE","limit":26000,"age":"2025","closeDate":"14TH","availability":"2","price":325},{"bank":"CAPITAL ONE","limit":500,"age":"2017","closeDate":"14TH","availability":"2","price":240},{"bank":"BARCLAYS","limit":1500,"age":"2022","closeDate":"14TH","availability":"4","price":250},{"bank":"CITIBANK","limit":12000,"age":"2017","closeDate":"14TH","availability":"4","price":350},{"bank":"WELLS FARGO","limit":14000,"age":"2025","closeDate":"14TH","availability":"15","price":280},{"bank":"CITIBANK","limit":20000,"age":"2018","closeDate":"14TH","availability":"2","price":360},{"bank":"CAPITAL ONE","limit":4000,"age":"2025","closeDate":"14TH","availability":"10","price":225},{"bank":"CAPITAL ONE","limit":3300,"age":"2022","closeDate":"14TH","availability":"5","price":250},{"bank":"WELLS FARGO","limit":11000,"age":"2025","closeDate":"14TH","availability":"11","price":255},{"bank":"CAPITAL ONE","limit":1000,"age":"2022","closeDate":"15TH","availability":"3","price":220},{"bank":"CITIBANK","limit":3000,"age":"2025","closeDate":"15TH","availability":"2","price":220},{"bank":"DISCOVER","limit":12500,"age":"2020","closeDate":"15TH","availability":"5","price":315},{"bank":"AMERICAN EXPRESS","limit":75000,"age":"90 DAY TERM","closeDate":"15TH","availability":"Many","price":450},{"bank":"CITIBANK","limit":9200,"age":"2025","closeDate":"15TH","availability":"10","price":260},{"bank":"CAPITAL ONE","limit":7500,"age":"2020","closeDate":"15TH","availability":"2","price":295},{"bank":"CITIBANK","limit":8400,"age":"2019","closeDate":"15TH","availability":"2","price":285},{"bank":"TD BANK","limit":8000,"age":"2024","closeDate":"15TH","availability":"3","price":260},{"bank":"US BANK","limit":500,"age":"2024","closeDate":"15TH","availability":"3","price":195},{"bank":"CAPITAL ONE","limit":13700,"age":"2022","closeDate":"15TH","availability":"4","price":295},{"bank":"US BANK","limit":4700,"age":"2023","closeDate":"15TH","availability":"1","price":250},{"bank":"CITIBANK","limit":9200,"age":"2025","closeDate":"15TH","availability":"5","price":260},{"bank":"CAPITAL ONE","limit":1000,"age":"2022","closeDate":"15TH","availability":"3","price":225},{"bank":"BARCLAYS","limit":4000,"age":"2022","closeDate":"15TH","availability":"10","price":265},{"bank":"CITIBANK","limit":6200,"age":"2024","closeDate":"15TH","availability":"5","price":255},{"bank":"CHASE","limit":8900,"age":"2022","closeDate":"15TH","availability":"11","price":295},{"bank":"BARCLAYS","limit":1500,"age":"2026","closeDate":"15TH","availability":"2","price":215},{"bank":"WELLS FARGO","limit":15000,"age":"2021","closeDate":"15TH","availability":"15","price":345},{"bank":"CHASE","limit":600,"age":"2022","closeDate":"16TH","availability":"9","price":220},{"bank":"CITIBANK","limit":1000,"age":"2025","closeDate":"16TH","availability":"2","price":200},{"bank":"CAPITAL ONE","limit":1000,"age":"2024","closeDate":"16TH","availability":"4","price":200},{"bank":"CITIBANK","limit":1000,"age":"2025","closeDate":"16TH","availability":"4","price":200},{"bank":"DISCOVER","limit":6700,"age":"2021","closeDate":"16TH","availability":"2","price":315},{"bank":"CHASE","limit":25000,"age":"2025","closeDate":"16TH","availability":"2","price":315},{"bank":"CITIBANK","limit":4100,"age":"2018","closeDate":"16TH","availability":"1","price":275},{"bank":"PENFED","limit":8700,"age":"2020","closeDate":"16TH","availability":"5","price":295},{"bank":"CITIBANK","limit":7500,"age":"2023","closeDate":"16TH","availability":"3","price":265},{"bank":"CITIBANK","limit":8500,"age":"2022","closeDate":"16TH","availability":"4","price":270},{"bank":"WELLS FARGO","limit":31000,"age":"2025","closeDate":"16TH","availability":"15","price":350},{"bank":"CITIBANK","limit":8900,"age":"2022","closeDate":"16TH","availability":"2","price":275},{"bank":"AMERICAN EXPRESS","limit":4000,"age":"Amex reports limit only, not history","closeDate":"16TH","availability":"Many","price":215},{"bank":"BANK OF AMERICA","limit":1100,"age":"2018","closeDate":"16TH","availability":"2","price":275},{"bank":"WELLS FARGO","limit":8000,"age":"2025","closeDate":"16TH","availability":"15","price":260},{"bank":"WELLS FARGO","limit":25000,"age":"2025","closeDate":"16TH","availability":"14","price":325},{"bank":"CITIBANK","limit":19000,"age":"2024","closeDate":"16TH","availability":"2","price":295},{"bank":"CITIBANK","limit":5200,"age":"2023","closeDate":"17TH","availability":"6","price":255},{"bank":"CITIBANK","limit":3500,"age":"2025","closeDate":"17TH","availability":"2","price":230},{"bank":"CHASE","limit":8500,"age":"2017","closeDate":"17TH","availability":"7","price":325},{"bank":"CITIBANK","limit":16500,"age":"2018","closeDate":"17TH","availability":"1","price":365},{"bank":"WELLS FARGO","limit":7500,"age":"2021","closeDate":"17TH","availability":"5","price":265},{"bank":"CITIBANK","limit":17500,"age":"2011","closeDate":"17TH","availability":"1","price":385},{"bank":"CAPITAL ONE","limit":850,"age":"2016","closeDate":"17TH","availability":"5","price":260},{"bank":"TD BANK","limit":10000,"age":"2022","closeDate":"17TH","availability":"4","price":285},{"bank":"BARCLAYS","limit":750,"age":"2023","closeDate":"17TH","availability":"6","price":220},{"bank":"CITIBANK","limit":5000,"age":"2019","closeDate":"17TH","availability":"2","price":285},{"bank":"CHASE","limit":3200,"age":"2023","closeDate":"18TH","availability":"10","price":250},{"bank":"WELLS FARGO","limit":15000,"age":"2019","closeDate":"18TH","availability":"15","price":315},{"bank":"CITIBANK","limit":14800,"age":"2025","closeDate":"18TH","availability":"6","price":265},{"bank":"CITIBANK","limit":12800,"age":"2023","closeDate":"18TH","availability":"6","price":280},{"bank":"CAPITAL ONE","limit":30000,"age":"2025","closeDate":"18TH","availability":"10","price":385},{"bank":"CITIBANK","limit":3600,"age":"2018","closeDate":"18TH","availability":"2","price":275},{"bank":"TRUIST","limit":20500,"age":"2025","closeDate":"18TH","availability":"5","price":300},{"bank":"AMERICAN EXPRESS","limit":30000,"age":"Amex reports limit only, not history","closeDate":"18TH","availability":"Many","price":330},{"bank":"AMERICAN EXPRESS","limit":1000,"age":"Amex reports limit only, not history","closeDate":"18TH","availability":"Many","price":190},{"bank":"BARCLAYS","limit":2000,"age":"2026","closeDate":"18TH","availability":"15","price":200},{"bank":"CITIBANK","limit":5000,"age":"2014","closeDate":"18TH","availability":"1","price":350},{"bank":"TRUIST","limit":25000,"age":"2025","closeDate":"18TH","availability":"5","price":315},{"bank":"DISCOVER","limit":8000,"age":"2022","closeDate":"18TH","availability":"1","price":300},{"bank":"BARCLAYS","limit":900,"age":"2022","closeDate":"19TH","availability":"6","price":255},{"bank":"CAPITAL ONE","limit":500,"age":"2023","closeDate":"19TH","availability":"10","price":335},{"bank":"CITIBANK","limit":6000,"age":"2020","closeDate":"19TH","availability":"10","price":280},{"bank":"DISCOVER","limit":9000,"age":"2022","closeDate":"19TH","availability":"1","price":300},{"bank":"CAPITAL ONE","limit":2600,"age":"2022","closeDate":"19TH","availability":"4","price":250},{"bank":"WELLS FARGO","limit":17000,"age":"2025","closeDate":"19TH","availability":"15","price":295},{"bank":"AMERICAN EXPRESS","limit":25000,"age":"Amex reports limit only, not history","closeDate":"19TH","availability":"Many","price":315},{"bank":"AMERICAN EXPRESS","limit":8000,"age":"Amex reports limit only, not history","closeDate":"19TH","availability":"Many","price":240},{"bank":"WELLS FARGO","limit":12000,"age":"2024","closeDate":"19TH","availability":"9","price":265},{"bank":"AMERICAN EXPRESS","limit":28000,"age":"Amex reports limit only, not history","closeDate":"19TH","availability":"Many","price":310},{"bank":"DISCOVER","limit":11500,"age":"2023","closeDate":"20TH","availability":"1","price":300},{"bank":"WELLS FARGO","limit":17000,"age":"2025","closeDate":"20TH","availability":"10","price":300},{"bank":"WELLS FARGO","limit":6000,"age":"2021","closeDate":"20TH","availability":"4","price":275},{"bank":"CITIBANK","limit":16000,"age":"2017","closeDate":"20TH","availability":"1","price":365},{"bank":"AMERICAN EXPRESS","limit":2000,"age":"Amex reports limit only, not history","closeDate":"20TH","availability":"Many","price":200},{"bank":"WELLS FARGO","limit":12000,"age":"2025","closeDate":"20TH","availability":"15","price":270},{"bank":"TRUIST","limit":10500,"age":"2020","closeDate":"20TH","availability":"4","price":300},{"bank":"CITIBANK","limit":5700,"age":"2025","closeDate":"20TH","availability":"5","price":240},{"bank":"AMERICAN EXPRESS","limit":2800,"age":"Amex reports limit only, not history","closeDate":"20TH","availability":"Many","price":210},{"bank":"WELLS FARGO","limit":12000,"age":"2024","closeDate":"20TH","availability":"15","price":280},{"bank":"WELLS FARGO","limit":15000,"age":"2024","closeDate":"20TH","availability":"14","price":280},{"bank":"CITIBANK","limit":6400,"age":"2021","closeDate":"20TH","availability":"2","price":280},{"bank":"AMERICAN EXPRESS","limit":7500,"age":"Amex reports limit only, not history","closeDate":"20TH","availability":"Many","price":240},{"bank":"DISCOVER","limit":4000,"age":"2024","closeDate":"20TH","availability":"2","price":250},{"bank":"CAPITAL ONE","limit":2600,"age":"2022","closeDate":"20TH","availability":"4","price":250},{"bank":"AMERICAN EXPRESS","limit":10500,"age":"Amex reports limit only, not history","closeDate":"20TH","availability":"Many","price":255},{"bank":"CITIBANK","limit":3000,"age":"2021","closeDate":"20TH","availability":"2","price":240},{"bank":"CITIBANK","limit":5800,"age":"2017","closeDate":"20TH","availability":"7","price":325},{"bank":"AMERICAN EXPRESS","limit":88000,"age":"90 DAY TERM","closeDate":"20TH","availability":"Many","price":480},{"bank":"CITIBANK","limit":6400,"age":"2021","closeDate":"20TH","availability":"8","price":270},{"bank":"WELLS FARGO","limit":25000,"age":"2012","closeDate":"20TH","availability":"10","price":395},{"bank":"CAPITAL ONE","limit":5000,"age":"2025","closeDate":"20TH","availability":"1","price":245},{"bank":"CITIBANK","limit":4900,"age":"2023","closeDate":"20TH","availability":"6","price":260},{"bank":"AMERICAN EXPRESS","limit":10000,"age":"Amex reports limit only, not history","closeDate":"20TH","availability":"Many","price":250},{"bank":"BARCLAYS","limit":1000,"age":"2026","closeDate":"20TH","availability":"6","price":200},{"bank":"AMERICAN EXPRESS","limit":24000,"age":"Amex reports limit only, not history","closeDate":"20TH","availability":"Many","price":300},{"bank":"WELLS FARGO","limit":20000,"age":"2025","closeDate":"20TH","availability":"15","price":300},{"bank":"BARCLAYS","limit":19300,"age":"2026","closeDate":"20TH","availability":"15","price":295},{"bank":"WELLS FARGO","limit":4000,"age":"2021","closeDate":"20TH","availability":"4","price":250},{"bank":"WELLS FARGO","limit":18000,"age":"2025","closeDate":"21ST","availability":"14","price":285},{"bank":"WELLS FARGO","limit":15000,"age":"2024","closeDate":"21ST","availability":"15","price":290},{"bank":"PNC","limit":5000,"age":"2025","closeDate":"21ST","availability":"5","price":250},{"bank":"WELLS FARGO","limit":6000,"age":"2021","closeDate":"21ST","availability":"15","price":260},{"bank":"CAPITAL ONE","limit":1300,"age":"2024","closeDate":"21ST","availability":"2","price":250},{"bank":"CITIBANK","limit":4000,"age":"2023","closeDate":"21ST","availability":"1","price":230},{"bank":"AMERICAN EXPRESS","limit":44000,"age":"Amex reports limit only, not history","closeDate":"21ST","availability":"Many","price":350},{"bank":"CITIBANK","limit":1500,"age":"2019","closeDate":"21ST","availability":"3","price":230},{"bank":"NFCU","limit":13000,"age":"2023","closeDate":"22ND","availability":"1","price":295},{"bank":"PNC","limit":9500,"age":"2024","closeDate":"22ND","availability":"5","price":285},{"bank":"BARCLAYS","limit":22000,"age":"2022","closeDate":"22ND","availability":"15","price":365},{"bank":"CHASE","limit":10000,"age":"2024","closeDate":"22ND","availability":"1","price":280},{"bank":"CITIBANK","limit":15000,"age":"2020","closeDate":"22ND","availability":"1","price":300},{"bank":"WELLS FARGO","limit":11500,"age":"2023","closeDate":"22ND","availability":"3","price":280},{"bank":"WELLS FARGO","limit":2000,"age":"2021","closeDate":"22ND","availability":"15","price":210},{"bank":"WELLS FARGO","limit":11000,"age":"2017","closeDate":"22ND","availability":"15","price":355},{"bank":"CAPITAL ONE","limit":5000,"age":"2020","closeDate":"22ND","availability":"3","price":290},{"bank":"WELLS FARGO","limit":300,"age":"2009","closeDate":"22ND","availability":"15","price":315},{"bank":"CITIBANK","limit":10000,"age":"2023","closeDate":"22ND","availability":"4","price":285},{"bank":"CITIBANK","limit":3000,"age":"2015","closeDate":"22ND","availability":"3","price":345},{"bank":"WELLS FARGO","limit":30000,"age":"2022","closeDate":"22ND","availability":"15","price":355},{"bank":"CITIBANK","limit":5000,"age":"2020","closeDate":"22ND","availability":"2","price":260},{"bank":"CITIBANK","limit":8300,"age":"2021","closeDate":"22ND","availability":"5","price":275},{"bank":"WELLS FARGO","limit":4000,"age":"2021","closeDate":"23RD","availability":"5","price":255},{"bank":"CITIBANK","limit":8400,"age":"2020","closeDate":"23RD","availability":"8","price":280},{"bank":"WELLS FARGO","limit":16000,"age":"2024","closeDate":"23RD","availability":"15","price":285},{"bank":"CHASE","limit":12000,"age":"90 DAY TERM 2018","closeDate":"23RD","availability":"7","price":400},{"bank":"AMERICAN EXPRESS","limit":25000,"age":"Amex reports limit only, not history","closeDate":"23RD","availability":"Many","price":315},{"bank":"WELLS FARGO","limit":3600,"age":"2021","closeDate":"23RD","availability":"15","price":255},{"bank":"WELLS FARGO","limit":4000,"age":"2022","closeDate":"23RD","availability":"8","price":250},{"bank":"BARCLAYS","limit":7700,"age":"2025","closeDate":"23RD","availability":"14","price":250},{"bank":"WELLS FARGO","limit":18000,"age":"2023","closeDate":"23RD","availability":"15","price":315},{"bank":"CAPITAL ONE","limit":6000,"age":"2022","closeDate":"23RD","availability":"2","price":275},{"bank":"BARCLAYS","limit":1000,"age":"2026","closeDate":"23RD","availability":"5","price":200},{"bank":"WELLS FARGO","limit":15500,"age":"2022","closeDate":"23RD","availability":"14","price":285},{"bank":"NFCU","limit":1000,"age":"2022","closeDate":"23RD","availability":"2","price":250},{"bank":"CITIBANK","limit":14300,"age":"1987","closeDate":"23RD","availability":"1","price":550},{"bank":"CITIBANK","limit":11600,"age":"6MO","closeDate":"23RD","availability":"9","price":240},{"bank":"CITIBANK","limit":2000,"age":"2021","closeDate":"23RD","availability":"2","price":240},{"bank":"CAPITAL ONE","limit":5200,"age":"2016","closeDate":"23RD","availability":"5","price":350},{"bank":"CITIBANK","limit":13200,"age":"2025","closeDate":"23RD","availability":"4","price":270},{"bank":"CITIBANK","limit":5000,"age":"2018","closeDate":"23RD","availability":"5","price":295},{"bank":"CITIBANK","limit":8000,"age":"2016","closeDate":"24TH","availability":"5","price":365},{"bank":"CITIBANK","limit":8000,"age":"2018","closeDate":"24TH","availability":"4","price":315},{"bank":"WELLS FARGO","limit":4000,"age":"2023","closeDate":"24TH","availability":"15","price":240},{"bank":"WELLS FARGO","limit":11900,"age":"2020","closeDate":"24TH","availability":"15","price":300},{"bank":"CITIBANK","limit":3000,"age":"2025","closeDate":"24TH","availability":"4","price":215},{"bank":"WELLS FARGO","limit":14000,"age":"2025","closeDate":"24TH","availability":"14","price":245},{"bank":"AMERICAN EXPRESS","limit":17500,"age":"Amex reports limit only, not history","closeDate":"24TH","availability":"Many","price":290},{"bank":"WELLS FARGO","limit":5000,"age":"2021","closeDate":"24TH","availability":"15","price":250},{"bank":"CITIBANK","limit":5000,"age":"2018","closeDate":"24TH","availability":"5","price":285},{"bank":"NFCU","limit":28500,"age":"2018","closeDate":"24TH","availability":"1","price":385},{"bank":"NFCU","limit":15000,"age":"2020","closeDate":"24TH","availability":"1","price":300},{"bank":"CITIBANK","limit":1000,"age":"2021","closeDate":"24TH","availability":"5","price":240},{"bank":"WELLS FARGO","limit":18500,"age":"2019","closeDate":"24TH","availability":"10","price":345},{"bank":"CITIBANK","limit":6800,"age":"2024","closeDate":"24TH","availability":"8","price":255},{"bank":"CITIBANK","limit":2000,"age":"2025","closeDate":"24TH","availability":"3","price":210},{"bank":"WELLS FARGO","limit":9200,"age":"2023","closeDate":"24TH","availability":"15","price":260},{"bank":"CAPITAL ONE","limit":11000,"age":"2023","closeDate":"24TH","availability":"10","price":295},{"bank":"CITIBANK","limit":11200,"age":"2025","closeDate":"24TH","availability":"5","price":260},{"bank":"AMERICAN EXPRESS","limit":2000,"age":"Amex reports limit only, not history","closeDate":"24TH","availability":"Many","price":200},{"bank":"CITIBANK","limit":8300,"age":"2021","closeDate":"24TH","availability":"6","price":285},{"bank":"CITIBANK","limit":9100,"age":"2023","closeDate":"24TH","availability":"10","price":285},{"bank":"PNC","limit":14500,"age":"2025 Wise","closeDate":"25TH","availability":"1","price":260},{"bank":"CITIBANK","limit":7000,"age":"2026","closeDate":"25TH","availability":"3","price":225},{"bank":"AMERICAN EXPRESS","limit":43900,"age":"Amex reports limit only, not history","closeDate":"25TH","availability":"Many","price":355},{"bank":"CITIBANK","limit":2000,"age":"2021","closeDate":"25TH","availability":"5","price":240},{"bank":"CHASE","limit":22000,"age":"2024","closeDate":"25TH","availability":"11","price":350},{"bank":"DISCOVER","limit":22000,"age":"2019","closeDate":"25TH","availability":"5","price":395},{"bank":"CITIBANK","limit":11000,"age":"2023","closeDate":"25TH","availability":"8","price":270},{"bank":"FNBO","limit":4000,"age":"2022","closeDate":"25TH","availability":"5","price":250},{"bank":"AMERICAN EXPRESS","limit":50000,"age":"Amex reports limit only, not history","closeDate":"25TH","availability":"Many","price":360},{"bank":"AMERICAN EXPRESS","limit":39800,"age":"Amex reports limit only, not history","closeDate":"25TH","availability":"Many","price":340},{"bank":"CAPITAL ONE","limit":7500,"age":"2023","closeDate":"25TH","availability":"2","price":280},{"bank":"WELLS FARGO","limit":31000,"age":"2022","closeDate":"25TH","availability":"15","price":370},{"bank":"WELLS FARGO","limit":2500,"age":"2023","closeDate":"25TH","availability":"4","price":230},{"bank":"CITIBANK","limit":8000,"age":"2023","closeDate":"25TH","availability":"10","price":270},{"bank":"WELLS FARGO","limit":14500,"age":"2023","closeDate":"26TH","availability":"15","price":270},{"bank":"CITIBANK","limit":4500,"age":"2023","closeDate":"26TH","availability":"2","price":250},{"bank":"AMERICAN EXPRESS","limit":15000,"age":"Amex reports limit only, not history","closeDate":"26TH","availability":"Many","price":280},{"bank":"WELLS FARGO","limit":4000,"age":"2022","closeDate":"26TH","availability":"15","price":250},{"bank":"CITIBANK","limit":4000,"age":"2025","closeDate":"26TH","availability":"2","price":230},{"bank":"CITIBANK","limit":9500,"age":"2025","closeDate":"26TH","availability":"4","price":250},{"bank":"WELLS FARGO","limit":17000,"age":"2023","closeDate":"26TH","availability":"15","price":315},{"bank":"CHASE","limit":17000,"age":"2024","closeDate":"26TH","availability":"1","price":315},{"bank":"CITIBANK","limit":7000,"age":"2024","closeDate":"26TH","availability":"4","price":250},{"bank":"AMERICAN EXPRESS","limit":34400,"age":"Amex reports limit only, not history","closeDate":"26TH","availability":"Many","price":340},{"bank":"CITIBANK","limit":11600,"age":"2025","closeDate":"26TH","availability":"5","price":235},{"bank":"AMERICAN EXPRESS","limit":5800,"age":"Amex reports limit only, not history","closeDate":"26TH","availability":"Many","price":235},{"bank":"CITIBANK","limit":5600,"age":"2025","closeDate":"26TH","availability":"9","price":220},{"bank":"WELLS FARGO","limit":1300,"age":"2021","closeDate":"26TH","availability":"15","price":215},{"bank":"CHASE","limit":500,"age":"2025","closeDate":"26TH","availability":"11","price":195},{"bank":"WELLS FARGO","limit":4000,"age":"2022","closeDate":"26TH","availability":"7","price":315},{"bank":"TD BANK","limit":6000,"age":"2024","closeDate":"26TH","availability":"2","price":250},{"bank":"CITIBANK","limit":8000,"age":"2025","closeDate":"26TH","availability":"2","price":235},{"bank":"WELLS FARGO","limit":10000,"age":"2020","closeDate":"27TH","availability":"15","price":295},{"bank":"AMERICAN EXPRESS","limit":11800,"age":"Amex reports limit only, not history","closeDate":"27TH","availability":"Many","price":255},{"bank":"SOFI","limit":7000,"age":"2023","closeDate":"27TH","availability":"4","price":270},{"bank":"WELLS FARGO","limit":22000,"age":"2021","closeDate":"27TH","availability":"15","price":350},{"bank":"AMERICAN EXPRESS","limit":3400,"age":"Amex reports limit only, not history","closeDate":"27TH","availability":"Many","price":215},{"bank":"AMERICAN EXPRESS","limit":20000,"age":"Amex reports limit only, not history","closeDate":"27TH","availability":"Many","price":300},{"bank":"AMERICAN EXPRESS","limit":29000,"age":"Amex reports limit only, not history","closeDate":"27TH","availability":"Many","price":320},{"bank":"AMERICAN EXPRESS","limit":25000,"age":"Amex reports limit only, not history","closeDate":"27TH","availability":"Many","price":315},{"bank":"TRUIST","limit":11600,"age":"2026","closeDate":"27TH","availability":"4","price":230},{"bank":"WELLS FARGO","limit":2700,"age":"2019","closeDate":"27TH","availability":"15","price":270},{"bank":"CAPITAL ONE","limit":7000,"age":"2025","closeDate":"27TH","availability":"4","price":250},{"bank":"SOFI","limit":8000,"age":"2025","closeDate":"27TH","availability":"5","price":260},{"bank":"WELLS FARGO","limit":23400,"age":"2019","closeDate":"27TH","availability":"15","price":365},{"bank":"FNBO","limit":15100,"age":"2022","closeDate":"27TH","availability":"5","price":300},{"bank":"AMERICAN EXPRESS","limit":5000,"age":"Amex reports limit only, not history","closeDate":"27TH","availability":"Many","price":225},{"bank":"CITIBANK","limit":9900,"age":"2024","closeDate":"27TH","availability":"8","price":275},{"bank":"AMERICAN EXPRESS","limit":10000,"age":"Amex reports limit only, not history","closeDate":"27TH","availability":"Many","price":250},{"bank":"CAPITAL ONE","limit":3000,"age":"2019","closeDate":"27TH","availability":"4","price":250},{"bank":"CITIBANK","limit":9500,"age":"2023","closeDate":"27TH","availability":"1","price":280},{"bank":"CITIBANK","limit":7500,"age":"2024","closeDate":"27TH","availability":"6","price":255},{"bank":"CITIBANK","limit":5800,"age":"2026","closeDate":"28TH","availability":"2","price":225},{"bank":"WELLS FARGO","limit":24000,"age":"2024","closeDate":"28TH","availability":"15","price":360},{"bank":"AMERICAN EXPRESS","limit":1000,"age":"Amex reports limit only, not history","closeDate":"28TH","availability":"Many","price":190},{"bank":"CITIBANK","limit":13200,"age":"2024","closeDate":"28TH","availability":"1","price":275},{"bank":"WELLS FARGO","limit":12500,"age":"2024","closeDate":"28TH","availability":"15","price":285},{"bank":"AMERICAN EXPRESS","limit":20000,"age":"Amex reports limit only, not history","closeDate":"28TH","availability":"Many","price":300},{"bank":"NFCU","limit":500,"age":"2022","closeDate":"29TH","availability":"4","price":230},{"bank":"CHASE","limit":4500,"age":"2025","closeDate":"29TH","availability":"11","price":240},{"bank":"CITIBANK","limit":29000,"age":"2019","closeDate":"29TH","availability":"8","price":395},{"bank":"CITIBANK","limit":11000,"age":"2023","closeDate":"29TH","availability":"9","price":295},{"bank":"WELLS FARGO","limit":10000,"age":"2022","closeDate":"29TH","availability":"15","price":270},{"bank":"AMERICAN EXPRESS","limit":14000,"age":"Amex reports limit only, not history","closeDate":"30TH","availability":"Many","price":255},{"bank":"WELLS FARGO","limit":10000,"age":"2024","closeDate":"30TH","availability":"15","price":280},{"bank":"CITIBANK","limit":9000,"age":"2023","closeDate":"30TH","availability":"4","price":295},{"bank":"CITIBANK","limit":20000,"age":"2024","closeDate":"30TH","availability":"10","price":350},{"bank":"NFCU","limit":30000,"age":"2024","closeDate":"30TH","availability":"1","price":395},{"bank":"AMERICAN EXPRESS","limit":30000,"age":"Amex reports limit only, not history","closeDate":"30TH","availability":"11","price":325},{"bank":"WELLS FARGO","limit":8800,"age":"2020","closeDate":"30TH","availability":"14","price":285},{"bank":"CITIBANK","limit":9000,"age":"2023","closeDate":"30TH","availability":"9","price":280},{"bank":"WELLS FARGO","limit":18000,"age":"2025","closeDate":"30TH","availability":"15","price":290},{"bank":"AMERICAN EXPRESS","limit":12200,"age":"Amex reports limit only, not history","closeDate":"30TH","availability":"Many","price":255},{"bank":"BANK OF AMERICA","limit":25000,"age":"2025","closeDate":"30TH","availability":"2","price":360},{"bank":"WELLS FARGO","limit":8000,"age":"2024","closeDate":"30TH","availability":"8","price":240},{"bank":"CITIBANK","limit":11000,"age":"2024","closeDate":"30TH","availability":"5","price":275},{"bank":"AMERICAN EXPRESS","limit":5100,"age":"Amex reports limit only, not history","closeDate":"30TH","availability":"Many","price":215},{"bank":"BANK OF AMERICA","limit":10000,"age":"2025","closeDate":"30TH","availability":"1","price":285},{"bank":"AMERICAN EXPRESS","limit":2000,"age":"Amex reports limit only, not history","closeDate":"30TH","availability":"Many","price":200}];
+      const TL_PAGE_SIZE = 25;
+      let tlCurrentPage = 1;
+
+      function tlMoney(n) {
+        return "$" + n.toLocaleString("en-US");
+      }
+
+      function tlPopulateBankFilter() {
+        const banks = [...new Set(tlInventory.map(t => t.bank))].sort();
+        const select = document.getElementById("tl-bank-filter");
+        banks.forEach(b => {
+          const opt = document.createElement("option");
+          opt.value = b;
+          opt.textContent = b;
+          select.appendChild(opt);
+        });
+      }
+
+      function tlGetFiltered() {
+        const search = document.getElementById("tl-search").value.toLowerCase().trim();
+        const bankFilter = document.getElementById("tl-bank-filter").value;
+        const sortBy = document.getElementById("tl-sort").value;
+
+        let results = tlInventory.filter(t => {
+          const matchesSearch = !search || t.bank.toLowerCase().includes(search) || t.age.toLowerCase().includes(search);
+          const matchesBank = !bankFilter || t.bank === bankFilter;
+          return matchesSearch && matchesBank;
+        });
+
+        results.sort((a, b) => {
+          switch (sortBy) {
+            case "price-asc": return a.price - b.price;
+            case "price-desc": return b.price - a.price;
+            case "limit-desc": return b.limit - a.limit;
+            case "limit-asc": return a.limit - b.limit;
+            case "bank-asc": return a.bank.localeCompare(b.bank);
+            default: return 0;
+          }
+        });
+
+        return results;
+      }
+
+      function tlRender() {
+        const filtered = tlGetFiltered();
+        const totalPages = Math.max(1, Math.ceil(filtered.length / TL_PAGE_SIZE));
+        if (tlCurrentPage > totalPages) tlCurrentPage = totalPages;
+
+        const start = (tlCurrentPage - 1) * TL_PAGE_SIZE;
+        const pageItems = filtered.slice(start, start + TL_PAGE_SIZE);
+
+        document.getElementById("tl-count").textContent =
+          filtered.length + " tradeline" + (filtered.length === 1 ? "" : "s") + " found — showing " +
+          (pageItems.length ? (start + 1) + "-" + (start + pageItems.length) : "0") + " of " + filtered.length;
+
+        const tbody = document.getElementById("tl-body");
+        tbody.innerHTML = pageItems.map(t => {
+          return "<tr>" +
+            "<td>" + t.bank + "</td>" +
+            "<td>" + tlMoney(t.limit) + "</td>" +
+            "<td>" + t.age + "</td>" +
+            "<td>" + t.closeDate + "</td>" +
+            "<td>Reports up to 60 days after add (closes " + t.closeDate + " monthly)</td>" +
+            "<td>" + t.availability + "</td>" +
+            "<td><strong>" + tlMoney(t.price) + "</strong></td>" +
+            "<td><a href="/sign-up.html" class="btn btn-gold">Request This Line</a></td>" +
+            "</tr>";
+        }).join("");
+
+        tlRenderPagination(totalPages);
+      }
+
+      function tlRenderPagination(totalPages) {
+        const container = document.getElementById("tl-pagination");
+        if (totalPages <= 1) {
+          container.innerHTML = "";
+          return;
+        }
+        let html = "";
+        html += "<button class="btn" " + (tlCurrentPage === 1 ? "disabled" : "") + " onclick="tlGoToPage(" + (tlCurrentPage - 1) + ")">Prev</button>";
+        const maxButtons = 7;
+        let startPage = Math.max(1, tlCurrentPage - 3);
+        let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+        startPage = Math.max(1, endPage - maxButtons + 1);
+        for (let p = startPage; p <= endPage; p++) {
+          html += "<button class="btn" + (p === tlCurrentPage ? " btn-gold" : "") + "" onclick="tlGoToPage(" + p + ")">" + p + "</button>";
+        }
+        html += "<button class="btn" " + (tlCurrentPage === totalPages ? "disabled" : "") + " onclick="tlGoToPage(" + (tlCurrentPage + 1) + ")">Next</button>";
+        container.innerHTML = html;
+      }
+
+      function tlGoToPage(p) {
+        tlCurrentPage = p;
+        tlRender();
+        document.getElementById("tl-controls").scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      document.getElementById("tl-search").addEventListener("input", () => { tlCurrentPage = 1; tlRender(); });
+      document.getElementById("tl-bank-filter").addEventListener("change", () => { tlCurrentPage = 1; tlRender(); });
+      document.getElementById("tl-sort").addEventListener("change", () => { tlCurrentPage = 1; tlRender(); });
+
+      tlPopulateBankFilter();
+      tlRender();
+    </script>
   
   </main>
   <footer class="site-footer">
