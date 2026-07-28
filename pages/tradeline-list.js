@@ -568,7 +568,7 @@ module.exports = {
 
         const tbody = document.getElementById("tl-body");
         tbody.innerHTML = pageItems.map(t => {
-          return "<tr>" +
+          return "<tr style=\\"color:#0A6DE6;\\">" +
             "<td>" + t.bank + "</td>" +
             "<td>" + tlMoney(t.limit) + "</td>" +
             "<td>" + t.age + "</td>" +
