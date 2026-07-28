@@ -453,8 +453,9 @@ module.exports = {
       notice. Lines may skip a reporting cycle once entered into the system;
       purchase at least 7 days before the statement close date shown to
       avoid a skipped cycle. We guarantee posting to at least one of the
-      three major bureaus. All lines report for up to 60 days (2 statement
-      cycles) once added.</p>
+      three major bureaus. Each tradeline is a 30-day reporting cycle —
+      to continue reporting beyond 30 days, a new cycle must be
+      purchased.</p>
 
       <div id="tl-controls" style="display:flex; flex-wrap:wrap; gap:12px; margin:24px 0; align-items:end;">
         <div style="flex:1; min-width:200px;">
@@ -572,7 +573,7 @@ module.exports = {
             "<td>" + tlMoney(t.limit) + "</td>" +
             "<td>" + t.age + "</td>" +
             "<td>" + t.closeDate + "</td>" +
-            "<td>Reports up to 60 days after add (closes " + t.closeDate + " monthly)</td>" +
+            "<td>30 days</td>" +
             "<td>" + t.availability + "</td>" +
             "<td><strong>" + tlMoney(t.price) + "</strong></td>" +
             "<td><a href=\\"/sign-up.html\\" class=\\"btn btn-gold\\">Request This Line</a></td>" +
