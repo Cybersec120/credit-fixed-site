@@ -6,6 +6,7 @@ const pages = [
   ["index.html", require("./pages/index.js")],
   ["tradelines.html", require("./pages/tradelines.js")],
   ["business-funding.html", require("./pages/business-funding.js")],
+  ["funding-readiness-assessment.html", require("./pages/funding-readiness-assessment.js")],
   ["what-is-a-tradeline.html", require("./pages/what-is-a-tradeline.js")],
   ["knowledge-center.html", require("./pages/knowledge-center.js")],
   ["tradelines-vs-credit-repair.html", require("./pages/articles/tradelines-vs-credit-repair.js")],
@@ -14,7 +15,6 @@ const pages = [
   ["types-of-business-financing-explained.html", require("./pages/articles/types-of-business-financing-explained.js")],
   ["personal-vs-business-loans.html", require("./pages/articles/personal-vs-business-loans.js")],
   ["about-us.html", require("./pages/about-us.js")],
-  ["testimonials.html", require("./pages/testimonials.js")],
   ["faq.html", require("./pages/faq.js")],
   ["partners.html", require("./pages/partners.js")],
   ["sign-up.html", require("./pages/sign-up.js")],
@@ -47,9 +47,6 @@ console.log("wrote sitemap.xml");
 const robots = `User-agent: *
 Allow: /
 Disallow: /client-login.html
-Disallow: /terms.html
-Disallow: /privacy.html
-Disallow: /tradeline-list.html
 
 Sitemap: ${SITE}/sitemap.xml
 `;
